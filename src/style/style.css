@@ -1,0 +1,203 @@
+.container {
+    display: grid;
+    grid-auto-flow: row;
+    min-height: 100%;
+    grid-template: minmax(100px, auto) 1fr minmax(70px, auto)/ 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template: 1fr/ 1fr minmax(auto, 300px) minmax(auto, 1100px);
+}
+
+.headerimg,
+.sectionimg2 {
+    display: grid;
+    justify-content: end;
+    grid-column: 3 / 3;
+}
+
+.nav {
+    display: grid;
+    align-content: start;
+}
+
+.nav_list {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: end;
+    grid-column: 2 / 3;
+    font-family: 'Nunito', Arial, sans-serif;
+    letter-spacing: 5px;
+    list-style-type: none;
+    gap: 20px;
+}
+
+a:hover {
+    color: #DAA520;
+}
+
+.nav a,
+.nav2 a {
+    text-decoration: none;
+   }
+
+.button1 {
+    display: grid;
+    justify-self: start;
+    grid-column: 3 / 3;
+    width: 137px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: bold;
+    background: white;
+}
+
+.header_button {
+    width: 175px;
+    height: 50px;
+    grid-column: 2 / 3;
+    justify-self: center;
+}
+
+.main {
+    grid-area: main;
+    padding: 30px 15px;
+    grid-column: 1 / 2;
+    display: grid;
+}
+
+.button2 {
+    justify-self: center;
+    width: 175px;
+    height: 50px;
+}
+
+.button3 {
+    display: grid;
+    justify-self: end;
+    width: 120px;
+    height: 40px;
+}
+
+.header_button,
+.button2,
+.button3 {
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+    color: #fff;
+    background: #DAA520;
+}
+
+.title,
+.title1,
+.title3,
+.section_title2,
+.section_title3 {
+    text-align: center;
+    font-family: 'Nunito', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.title2 {
+    width: 504px;
+    height: 98px;
+    left: 102px;
+    top: 217px;
+}
+
+.header_title1,
+.header_title2 {
+    display: grid;
+    text-align: center;
+    grid-column: 2 / 3;
+}
+
+.p1 {
+    display: grid;
+    text-align: end;
+    grid-column: 3 / 3;
+}
+
+.p1,
+.p2,
+.p3 {
+    font-family: 'Nunito', Arial, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+
+.section_name {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 98px;
+    text-align: center;
+    color: rgba(34, 34, 34, 0.1);
+
+}
+
+.sectionimg1 {
+    display: grid;
+    grid-column: 1 / 3;
+}
+
+.section2,
+.section3,
+.information {
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+.footer {
+    display: grid;
+    grid-area: footer;
+    grid-template: 1fr/ 1fr minmax(auto, 300px) minmax(auto, 1100px);
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 2px solid grey;
+}
+
+.contacts {
+    list-style-type: none;
+    grid-column: 1 / 3;
+}
+
+.h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Nunito', Arial, sans-serif;
+    text-align: center;
+}
+
+.nav_list2,
+.nav_list3,
+.nav_list4,
+.nav_list5 {
+    display: grid;
+    justify-items: start;
+    list-style-type: none;
+}
+
+.footer_img {
+    display: grid;
+    justify-content: end;
+}
